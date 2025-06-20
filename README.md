@@ -2,17 +2,10 @@
  <img width="524" src="https://github.com/user-attachments/assets/73daa1c3-8cf0-4e02-adae-427b36a924a1" />
 </div>
 
-
-## [Lumitech](https://lumitech.co/) Next.js Template ⚡
-The Lumitech Next.js Template provides a powerful and modern starting point for building fast, scalable, and maintainable web applications. With a clean architecture and pre-configured best practices, this template ensures that your development process is efficient and the project is production-ready.
-
-### About Lumitech
-[Lumitech](https://lumitech.co/) is a global custom software development company helping tech businesses build successful teams and innovative products. With a 600% growth since 2022, our team of engineers, AI/ML specialists, and product managers delivers high-quality software using the latest technologies.
-
 ### Why Use This Template? <br>
 This template is designed to accelerate and simplify development by providing modern technologies, a well-structured architecture, and ready-to-use examples:
 
-⚡ **Uses the latest and most modern technologies** – ```Zustand```, ```Tailwind```, ```TanStack Query```, ```Zod```, ```React Hook Form```, and more. <br>
+⚡ **Uses the latest and most modern technologies** – ```Zustand```, ```Tailwind```, ```TanStack Query```, ```Zod```, and more. <br>
 📂 **Clear folder architecture (FSD)** – no need to think about where to place files; everything is structured and ready to use. <br>
 📖 **Ready-to-use code examples** – quickly learn how to use key technologies with practical code snippets included in the template. <br>
 ⚙️ **Typed env file** – prevents errors with strict validation of environment variables. <br>
@@ -34,8 +27,6 @@ Just grab it and start developing! 🚀
 - [Zod](https://zod.dev/?id=basic-usage)
 - [Zustand](https://zustand.docs.pmnd.rs/getting-started/introduction)
 - [Axios](https://axios-http.com/docs/intro)
-- [React Hook Forms](https://react-hook-form.com/)
-
 
 ## 📚 Getting Started
 ### 1. Install dependencies:
