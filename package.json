@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "commit": "cz",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "dev": "next dev",
     "start": "next start",
     "prepare": "husky",
