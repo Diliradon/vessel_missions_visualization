@@ -19,6 +19,7 @@ model Vessel {
   Name       String
   IMONo      Int
   VesselType Int
+  DWT        Int?   // Deadweight Tonnage - add this field to your database
 
   @@map("vessels")
 }
