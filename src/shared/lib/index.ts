@@ -1,3 +1,3 @@
-export * from './styles';
-export * from './query';
 export * from './axios';
+export * from './query';
+export * from './styles';

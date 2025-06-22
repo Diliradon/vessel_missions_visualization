@@ -1,0 +1,79 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("MONGODB_URI")
+}
+
+model Vessel {
+  id         String @id @default(auto()) @map("_id") @db.ObjectId
+  Name       String
+  IMONo      Int
+  VesselType Int
+
+  @@map("vessels")
+}
+
+model ppReference {
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
+  RowID        Int      @unique
+  Category     String
+  VesselTypeID Int
+  Size         String
+  Traj         String
+  a            Float
+  b            Float
+  c            Float
+  d            Float
+  e            Float
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@map("ppReferences")
+}
+
+model dailyLogEmissions {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  EID         Int      @unique
+  VesselID    Int
+  LOGID       BigInt
+  FromUTC     DateTime
+  TOUTC       DateTime
+  MET2WCO2    Float
+  AET2WCO2    Float
+  BOT2WCO2    Float
+  VRT2WCO2    Float
+  TotT2WCO2   Float
+  MEW2WCO2e   Float
+  AEW2WCO2e   Float
+  BOW2WCO2e   Float
+  VRW2WCO2e   Float
+  ToTW2WCO2   Float
+  MESox       Float
+  AESox       Float
+  BOSox       Float
+  VRSox       Float
+  TotSOx      Float
+  MENOx       Float
+  AENOx       Float
+  TotNOx      Float
+  MEPM10      Float
+  AEPM10      Float
+  TotPM10     Float
+  AERCO2T2W   Float
+  AERCO2eW2W  Float
+  EEOICO2eW2W Float
+  CreatedAt   DateTime
+  UpdatedAt   DateTime
+
+  @@map("dailyLogEmissions")
+}

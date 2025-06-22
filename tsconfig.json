@@ -6,6 +6,7 @@
       "esnext"
     ],
     "paths": {
+      "@/*": ["*"],
       "entities/*": ["entities/*"]
     },
     "baseUrl": "./src",

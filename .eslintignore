@@ -4,3 +4,6 @@
 
 # Allow 'src' directory:
 !/src
+
+# Ignore generated files:
+src/generated/

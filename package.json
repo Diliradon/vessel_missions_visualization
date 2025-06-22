@@ -12,7 +12,10 @@
     "typescript": "tsc --noEmit",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
-    "lint:staged": "lint-staged"
+    "lint:staged": "lint-staged",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio"
   },
   "config": {
     "commitizen": {
@@ -25,12 +28,14 @@
     ]
   },
   "dependencies": {
+    "@prisma/client": "^6.10.1",
     "@t3-oss/env-nextjs": "^0.10.1",
     "@tanstack/react-query": "^5.68.0",
     "@tanstack/react-query-devtools": "^5.68.0",
     "axios": "^1.8.3",
     "clsx": "^2.1.0",
     "next": "latest",
+    "prisma": "^6.10.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwind-merge": "^2.2.1",
